@@ -62,7 +62,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "https://healthcare-management-backend.onrender.com/user/doctors",
+        "https://healthcare-management-backend.onrender.com",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -75,7 +75,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
-        "https://healthcare-management-backend.onrender.com/appointment/post",
+        "https://healthcare-management-backend.onrender.com",
         {
           firstName,
           lastName,
