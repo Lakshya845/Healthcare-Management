@@ -14,7 +14,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://healthcare-management-backend.onrender.commessage//api/v1/message/send",
+          "https://healthcare-management-backend.onrender.commessage/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
